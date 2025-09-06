@@ -142,7 +142,7 @@
                 </div>
                 <div class="info-item">
                     <strong>User Agent:</strong>
-                    {{ Str::limit($errorData['request']['user_agent'] ?? 'N/A', 50) }}
+                    {{ \Illuminate\Support\Str::limit($errorData['request']['user_agent'] ?? 'N/A', 50) }}
                 </div>
             </div>
         </div>

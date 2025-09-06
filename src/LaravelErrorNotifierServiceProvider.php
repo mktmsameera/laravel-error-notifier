@@ -20,6 +20,14 @@ class LaravelErrorNotifierServiceProvider extends ServiceProvider
             __DIR__.'/config/error-notifier.php' => config_path('error-notifier.php'),
         ], 'error-notifier-config');
 
+        // Load package views
+        $this->loadViewsFrom(__DIR__.'/resources/views', 'error-notifier');
+
+        // Publish views
+        $this->publishes([
+            __DIR__.'/resources/views' => resource_path('views/vendor/error-notifier'),
+        ], 'error-notifier-views');
+
         if ($this->app->runningInConsole()) {
             $this->commands([
                 TestNotificationCommand::class,
