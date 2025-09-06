@@ -1,0 +1,52 @@
+{
+    "name": "mktmsameera/laravel-error-notifier",
+    "description": "Multi-platform error notification package for Laravel applications",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "error",
+        "notification",
+        "whatsapp",
+        "discord",
+        "slack",
+        "email",
+        "exception"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tharindu Mahesh",
+            "email": "tharindums59@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^9.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "twilio/sdk": "^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "orchestra/testbench": "^7.0",
+        "mockery/mockery": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mktmsameera\\LaravelErrorNotifier\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mktmsameera\\LaravelErrorNotifier\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mktmsameera\\LaravelErrorNotifier\\LaravelErrorNotifierServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
