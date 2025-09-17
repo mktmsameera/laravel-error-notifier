@@ -1,6 +1,6 @@
 # Laravel Error Notifier
 
-A comprehensive Laravel package for sending error notifications to multiple platforms including Discord, Slack, WhatsApp, and Email. Get instant alerts when your application encounters critical errors. [Package Documentation]([https://github.com/mktmsameera/laravel-error-notifier](https://packagist.org/packages/mktmsameera/laravel-error-notifier))
+A comprehensive Laravel package for sending error notifications to multiple platforms including Discord, Slack, WhatsApp, and Email. Get instant alerts when your application encounters critical errors. [Package Documentation](https://packagist.org/packages/mktmsameera/laravel-error-notifier)
 
 ## Features
 
